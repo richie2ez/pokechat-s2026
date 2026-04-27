@@ -8,8 +8,8 @@ VENV_PIP := $(VENV)/bin/pip
 
 # --- Edit DEFAULT_* before submission (see README). Command-line overrides still work, e.g.:
 #     make submit STUDENT_NAME="Ada Lovelace" STUDENT_EMAIL="ada@example.edu"
-DEFAULT_STUDENT_NAME := Your Name Here
-DEFAULT_STUDENT_EMAIL := your.email@example.edu
+DEFAULT_STUDENT_NAME := Richard Itsarawiphat
+DEFAULT_STUDENT_EMAIL := rxi0479@mavs.uta.edu
 STUDENT_NAME ?= $(DEFAULT_STUDENT_NAME)
 STUDENT_EMAIL ?= $(DEFAULT_STUDENT_EMAIL)
 
