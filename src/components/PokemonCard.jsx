@@ -24,19 +24,19 @@ const typeColors = {
   steel: 'grey'
 };
 
-const PokemonCard = () => {
+const PokemonCard = ({ pokemonID }) => {
   const [pokemon, setPokemon] = useState(null);
   const [spriteIndex, setSpriteIndex] = useState(0);
 
   useEffect(() => {
     axios
-      .get(`${POKE_API}/pokemon/${POKE_CARD}`)
+      .get(`${POKE_API}/pokemon/${pokemonID || POKE_CARD}`)
       .then((res) => {
         setPokemon(res.data);
         setSpriteIndex(0);
       })
       .catch((err) => console.error('Pokemon API error:', err));
-  }, []);
+  }, [pokemonID]);
 
   if (!pokemon) return <div>Loading...</div>;
 
